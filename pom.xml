@@ -47,8 +47,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <modules>
-        <module>AOP</module>
-    </modules>
 </project>
