@@ -40,6 +40,7 @@ public class CGLibProxy implements MethodInterceptor {
 
         AOPCGLibProxy aopcgLibProxy = new AOPCGLibProxy(new ProxyAux());
         SomeManagerImpl manager = (SomeManagerImpl) Enhancer.create(SomeManagerImpl.class, aopcgLibProxy);
+        System.out.println(manager.getClass().toString());
         manager.other();
         manager.treat();
     }

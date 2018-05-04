@@ -13,7 +13,7 @@ public class Client {
         proxyFactory.addAdvice(new GreetingThrowAdvice());
 
         GreetingImpl greeting = (GreetingImpl) proxyFactory.getProxy();
-
+        System.out.println(greeting.getClass());
         greeting.greetingWithException();
 //        ApplicationContext context = new FileSystemXmlApplicationContext("src/main/resources/applicationContext.xml");
 //

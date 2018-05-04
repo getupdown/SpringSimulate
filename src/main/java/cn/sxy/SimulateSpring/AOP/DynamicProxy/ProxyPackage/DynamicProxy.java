@@ -43,6 +43,8 @@ public class DynamicProxy implements InvocationHandler {
                 dynamicProxy
         );
 
+        System.out.println(someManagerProxy.getClass().toString());
+
         someManagerProxy.treat();
     }
 }
